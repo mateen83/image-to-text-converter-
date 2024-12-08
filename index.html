@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image to Text Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Image to Text Converter</h1>
+    <input type="file" id="imageInput" accept="image/*">
+    <button id="convertButton">Convert to Text</button>
+    <div id="output" class="output-box">
+        <h3>Extracted Text:</h3>
+        <textarea class="border" id="extractedText" placeholder="Extracted text will appear here..." rows="5"></textarea>
+        <div class="button-container">
+        <button id="clearButton" class="clear-btn">Clear</button>
+        <button id="copyButton" class="copy-btn">Copy</button>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js/dist/tesseract.min.js"></script>
+  <script src="script.js"></script>
+</body>
+  
